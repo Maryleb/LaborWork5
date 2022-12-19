@@ -3,18 +3,23 @@ body
 	font-size 14px
 	font-family arial
 
-.central-block
+.central_block
 	background #E3E3E3
-	width 90%
+	width 93%
+	margin 30px auto
 
 .menu
 	font-weight bold
 	display flex
 	margin auto
 	justify-content center
+	a
+		text-decoration none
+		color black
 
 .menu_item
-	margin 0 5px
+	margin 15px
+	padding 10px
 
 	&:hover
 		background #DCDCDC
@@ -24,8 +29,88 @@ p
 	text-indent 30px
 	letter-spacing normal
 	line-height 2
+	padding 15px
+
+.container_css
+	width 90%
+	margin auto
+	min-height 750px
 
 .image
+	display inline
+	vertical-align middle
 	width 300px
 	float right
-	margin: 7px 0 7px 7px;
+	margin 7px 0 7px 7px
+	padding 10px
+
+.second_block
+	width 200px
+	margin 0 auto
+	.vid
+		width 100%
+
+.img_block
+	display flex
+	justify-content space-around
+	.image_1
+		img
+			width 100%
+			padding 0 15px
+
+.block1
+	display flex
+	justify-content space-evenly
+	align-items center
+
+.block1_image
+	width 50%
+	overflow: auto;
+	img
+		box-sizing border-box
+		padding 10px
+		width 100%
+		
+
+.block2
+	display flex
+
+.block3
+	display flex
+	justify-content space-evenly
+	.text3
+		box-sizing border-box
+		padding 10px
+
+@media (max-width 600px)
+	.central_block
+		width 100%
+		margin auto
+
+	.menu 
+		flex-wrap wrap
+		align-items center
+		.menu_item
+			text-align center
+
+	.image
+		display block
+		float none
+		margin 0 auto
+
+	.second_block
+		width 100%
+
+	.img_block
+		flex-direction column
+		justify-content center
+		.image_1
+			margin auto
+			img
+				width 100%
+				padding 10px
+
+	.block1
+		flex-direction column
+	.block3
+		flex-direction column
