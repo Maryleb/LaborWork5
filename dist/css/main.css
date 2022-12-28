@@ -2,10 +2,12 @@ body {
   background: #164b69;
   font-size: 14px;
   font-family: arial;
+  width: 90%;
+  max-width: 800px;
+  margin: 15px auto;
 }
 .central_block {
   background: #e3e3e3;
-  width: 93%;
   margin: 30px auto;
 }
 .menu {
@@ -18,9 +20,11 @@ body {
   text-decoration: none;
   color: #000;
 }
+.menu .active {
+  background: #dcdcdc;
+}
 .menu_item {
-  margin: 15px;
-  padding: 10px;
+  padding: 20px;
 }
 .menu_item:hover {
   background: #dcdcdc;

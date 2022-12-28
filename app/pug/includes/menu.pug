@@ -1,7 +1,27 @@
-.menu 
-	a(href="index.html").menu_item CSS
-	a(href="CSSsyntax.html").menu_item Синтаксис CSS
-	a(href="").menu_item Вставка CSS
-	a(href="").menu_item CSS текст
-	a(href="CSSfont.html").menu_item CSS шрифт
-	a(href="").menu_item Блоки
+mixin createMenu(address)
+	if address == "CSS"
+		.menu 
+			a(href="index.html").menu_item.active CSS
+			a(href="CSSsyntax.html").menu_item Синтаксис CSS
+			a(href="").menu_item Вставка CSS
+			a(href="").menu_item CSS текст
+			a(href="CSSfont.html").menu_item CSS шрифт
+			a(href="").menu_item Блоки
+
+	if address == "Синтаксис CSS"
+		.menu 
+			a(href="index.html").menu_item CSS
+			a(href="CSSsyntax.html").menu_item.active Синтаксис CSS
+			a(href="").menu_item Вставка CSS
+			a(href="").menu_item CSS текст
+			a(href="CSSfont.html").menu_item CSS шрифт
+			a(href="").menu_item Блоки
+
+	if address == "CSS шрифт"
+		.menu 
+			a(href="index.html").menu_item CSS
+			a(href="CSSsyntax.html").menu_item Синтаксис CSS
+			a(href="").menu_item Вставка CSS
+			a(href="").menu_item CSS текст
+			a(href="CSSfont.html").menu_item.active CSS шрифт
+			a(href="").menu_item Блоки
